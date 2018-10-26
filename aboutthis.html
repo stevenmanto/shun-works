@@ -14,11 +14,54 @@
 
     <meta property="og:type" content="website" />
 
-    <title>鄭順の作品集</title>
+    <title>鄭順の作品集－關於這一切</title>
     <!-- 瀏覽器上的 tab 的縮圖 -->
     <link href="logo.png" rel="shortcut icon" />
 </head>
 <style>
+  
+    .bookmark {
+        font-size: 22px;
+        font-weight: 500;
+        color: #685849;
+        text-align: center;
+        margin-top: 20px
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 900;
+        color: #685849;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #685849;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .leading{
+        font-size: 22px;
+        font-weight: 500;
+        color: #685849;
+        letter-spacing: 1.15
+    }
+    .text{
+        font-size: 18px;
+        font-weight: 500;
+        color: #685849;
+        letter-spacing: 1.15
+    }
+
+    article {
+        margin: 40px auto;
+        width: 280px;
+
+    }
+
     .navbar {
         width: 280px;
         margin: 0 auto;
@@ -26,11 +69,16 @@
 
     .nav-font {
         font-size: 20px;
+        color: #685849;
     }
 
     .nav-font2 {
         font-size: 12px;
-        color:black;
+        color: #685849;
+    }
+
+    .navbar-text {
+        color: #685849;
     }
 
     .img-icon {
@@ -57,6 +105,7 @@
         margin-left: 20px;
         margin-right: 20px;
         width: 100px;
+        color: #685849;
 
     }
 
@@ -68,15 +117,28 @@
         margin-top: 40px;
     }
 
+    .dropdown-item:hover {
+        background-color: #e0e0e0
+    }
 
+
+
+
+    @media screen and (max-width: 767px) {
+       
+
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
+        article {
+            width: 600px;
+        }
         .nav-font {
             font-size: 24px;
         }
         .nav-font2 {
             font-size: 16px;
-            color:black;
+            color: black;
         }
         .flex-footer {
             max-width: 600px;
@@ -85,17 +147,24 @@
             width: 600px;
             margin: 0 auto;
         }
+     
+
+
+
 
 
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
+        article {
+            width: 900px;
+        }
         .nav-font {
             font-size: 24px;
         }
         .nav-font2 {
             font-size: 16px;
-            color:black;
+            color: black;
         }
 
         .flex-footer {
@@ -115,16 +184,17 @@
         .navbar-text {
             width: 640px
         }
+       
 
     }
 </style>
 
 <body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
+    <a name="top"></a>
     <header class="bg-light">
-        <!--可以寫一個display讓nav在mobile有下拉 其他時候沒有-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-font ">
+        <nav class="navbar navbar-expand-lg navbar-light nav-font ">
             <a class="navbar-brand nav-font" href="https://stevenmanto.github.io/shun-works/home" style=" text-align:center">
-                <img src="logo.png" class="d-inline-block align-top img-icon" alt="鄭順"></img>
+                <img title="回首頁" src="logo.png" class="d-inline-block align-top img-icon" alt="鄭順"></img>
             </a>
             <span class="navbar-text">
                 鄭順の作品集
@@ -152,8 +222,8 @@
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-eng">Autobiography</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-jp">自叙伝</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/experience">經歷</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/written-works">文字作品</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/video-works">影音作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/news-works">新聞作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/classworks">課堂作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/otherworks">其他作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/aboutthis">關於這一切</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/contact">聯絡我</a>
@@ -172,20 +242,20 @@
         <div class="flex-footer ">
             <a href="https://stevenmanto.github.io/shun-works/aboutthis" target="_self" style="text-decoration: none;color:black">
                 <div class="footer-item">
-                    <img src="info.png" width="100px"></img>
+                    <img title="關於這一切" src="info.png" width="100px"></img>
                     <div style="margin-top:15px">關於這一切</div>
                 </div>
             </a>
             <a href="https://stevenmanto.github.io/shun-works/contact" target="_self" style="text-decoration: none;color:black">
                 <div class="footer-item">
-                    <img src="contact.png" width="100px"></img>
+                    <img title="聯絡我" src="contact.png" width="100px"></img>
                     <div style="margin-top:15px">聯絡我</div>
                 </div>
             </a>
             <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/shun-works/home'))));"
                 style="text-decoration: none;color:black">
                 <div class="footer-item">
-                    <img title="分享到Facebook" src="FB.png" width="100px" />
+                    <img title="分享至Facebook" src="FB.png" width="100px" />
                     <div style="margin-top:15px">FB分享</div>
                 </div>
             </a>
@@ -210,5 +280,9 @@
 
 
 <script src='http://platform.twitter.com/widgets.js' type='text/javascript' />
+
+
+
+
 
 </html>

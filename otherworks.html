@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+        crossorigin="anonymous" />
     <meta property="og:title" content="鄭順の作品集" />
 
     <meta property="og:description" content="我是鄭順祥，畢業於政大新聞系，期望這個社會因我而有所不同。" />
@@ -14,11 +16,76 @@
 
     <meta property="og:type" content="website" />
 
-    <title>鄭順の作品集</title>
+    <title>鄭順の作品集－其他作品</title>
     <!-- 瀏覽器上的 tab 的縮圖 -->
     <link href="logo.png" rel="shortcut icon" />
 </head>
 <style>
+    .bookmark {
+        font-size: 22px;
+        font-weight: 500;
+        color: #685849;
+        text-align: center;
+        margin-top: 20px
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 900;
+        color: #685849;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #685849;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #685849;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sub {
+        border: 2px;
+        border-style: solid;
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #685849;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .leading {
+        font-size: 22px;
+        font-weight: 500;
+        color: #685849;
+        letter-spacing: 1.15
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: 500;
+        color: #685849;
+        letter-spacing: 1.15
+    }
+
+    article {
+        margin: 40px auto;
+        width: 280px;
+
+    }
+
     .navbar {
         width: 280px;
         margin: 0 auto;
@@ -26,11 +93,16 @@
 
     .nav-font {
         font-size: 20px;
+        color: #685849;
     }
 
     .nav-font2 {
         font-size: 12px;
-        color:black;
+        color: #685849;
+    }
+
+    .navbar-text {
+        color: #685849;
     }
 
     .img-icon {
@@ -57,6 +129,7 @@
         margin-left: 20px;
         margin-right: 20px;
         width: 100px;
+        color: #685849;
 
     }
 
@@ -68,15 +141,106 @@
         margin-top: 40px;
     }
 
+    .dropdown-item:hover {
+        background-color: #e0e0e0
+    }
 
+    .flex-fig {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 280px;
+    }
+
+    .img-item {
+        width: 120px;
+        height: 170px;
+        margin-bottom: 20px
+    }
+
+    .img-item:hover {
+        opacity: 0.5;
+    }
+
+    .fig-item {
+        width: 120px;
+        height: 160px;
+        margin-bottom: 20px
+    }
+
+    .box {
+        font-size: 16px;
+        font-weight: 600;
+        color: #685849;
+        letter-spacing: 1.15
+    }
+
+    .karaoke-item {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px
+    }
+
+    .kara {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .carousel {
+
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    @media screen and (max-width: 767px) {
+        .video-container {
+
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+
+
+        }
+
+        .video-tablet {
+            display: none
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .jojo {
+            width: 100%
+        }
+
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
+        article {
+            width: 600px;
+        }
         .nav-font {
             font-size: 24px;
         }
         .nav-font2 {
             font-size: 16px;
-            color:black;
+            color: black;
         }
         .flex-footer {
             max-width: 600px;
@@ -85,17 +249,57 @@
             width: 600px;
             margin: 0 auto;
         }
+        .flex-fig {
+            max-width: 600px;
+        }
+        .fig-item {
+            width: 180px;
+            height: 240px;
+            margin-bottom: 20px
+        }
+        .karaoke-item {
+            width: 260px;
+            height: 260px;
+            margin-bottom: 20px
+        }
+        .video-container {
+            display: none
+        }
+        .video-tablet {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video-width {
+            margin: 0 auto;
+            width: 448px
+        }
+        .jojo {
+            width: 100%
+        }
+        .carousel {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+
 
 
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
+        article {
+            width: 900px;
+        }
         .nav-font {
             font-size: 24px;
         }
         .nav-font2 {
             font-size: 16px;
-            color:black;
+            color: black;
         }
 
         .flex-footer {
@@ -115,16 +319,57 @@
         .navbar-text {
             width: 640px
         }
+        .flex-fig {
+            max-width: 900px;
+        }
+        .img-item {
+            width: 200px;
+            height: 283px;
+        }
+        .fig-item {
+            width: 270px;
+            height: 360px;
+            margin-bottom: 20px
+        }
+        .karaoke-item {
+            width: 400px;
+            height: 400px;
+            margin-bottom: 20px
+        }
+        .kara,
+        .jojo {
+            width: 560px;
+            margin-bottom: 20px
+        }
+        .video-tablet {
+            display: none
+        }
+        .video-container {
+            text-align: center
+        }
+        .video-width {
+            margin: 0 auto;
+            width: 560px
+        }
+        .jojo:hover {
+            opacity: 0.5;
+        }
+        .carousel {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
 
     }
 </style>
 
 <body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
+    <a name="top"></a>
     <header class="bg-light">
-        <!--可以寫一個display讓nav在mobile有下拉 其他時候沒有-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-font ">
+        <nav class="navbar navbar-expand-lg navbar-light nav-font ">
             <a class="navbar-brand nav-font" href="https://stevenmanto.github.io/shun-works/home" style=" text-align:center">
-                <img src="logo.png" class="d-inline-block align-top img-icon" alt="鄭順"></img>
+                <img title="回首頁" src="logo.png" class="d-inline-block align-top img-icon" alt="鄭順"></img>
             </a>
             <span class="navbar-text">
                 鄭順の作品集
@@ -152,8 +397,8 @@
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-eng">Autobiography</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-jp">自叙伝</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/experience">經歷</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/written-works">文字作品</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/video-works">影音作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/news-works">新聞作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/classworks">課堂作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/otherworks">其他作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/aboutthis">關於這一切</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/contact">聯絡我</a>
@@ -166,26 +411,378 @@
 
     </header>
     <article>
+        <h1>其他作品</h1>
+        <p class="leading">　本區的作品包羅萬象，除了我在南友會舉辦活動、擔任幹部以來的心血結晶（當中還未包含文字企劃與開會紀錄），也有我在擔任學生議員時所製作的懶人包。另外，除了這些職責、任務以外，我更附上了過去在晚會歌唱表演的影片，以及參與錄製兩集公視益智節目《一字千金》的節目內容，以較生活化及有趣的方式，帶您認識不同的我！</p>
+        <div class="bookmark">
 
+            <a class="btn btn-light btn-lg" href="#one" role="button">南友創作</a>
+            <a class="btn btn-light btn-lg" href="#two" role="button">學生議會</a>
+            <a class="btn btn-light btn-lg" href="#three" role="button">歌唱表演</a>
+            <a class="btn btn-light btn-lg" href="#four" role="button">一字千金</a>
+        </div>
+
+        <a name="one"></a>
+        <h2>南友創作</h2>
+
+        <div>
+            <h3>
+                <span style="background-color:  #76E5BD">學術部－會訊、選課手冊、迎新專刊</span>
+            </h3>
+            <figure class="flex-fig">
+                <a href="https://issuu.com/nccu_fcwrite/docs/____________1032____________.compre" target="_blank">
+                    <img src="N1.png" class="img-item"></img>
+                </a>
+                <a href="https://issuu.com/nccu_fcwrite/docs/_______5_____________-indesign.comp" target="_blank">
+                    <img src="N2.png" class="img-item"></img>
+                </a>
+                <a href="https://issuu.com/nccu_fcwrite/docs/____________.compressed" target="_blank">
+                    <img src="N3.png" class="img-item"></img>
+                </a>
+                <a href="https://issuu.com/nccu_fcwrite/docs/____________x.compressed__1_" target="_blank">
+                    <img src="N4.png" class="img-item"></img>
+                </a>
+            </figure>
+            <p class="text">　會內刊物主要由南友會學術部部員製作，每一次製作刊物前都必須經過多次籌會進行主題、風格、內容、專案等討論，進行編務後，再經過多次修會進行修改、調整，最後推出刊物，可說是南友會學術部的創意成果。其中，我更擔任二期會訊、迎新專刊執秘（總召）以及選課講義副執秘，統籌編務與行政業務，並追蹤組員稿件狀況，如期出刊並寄送給新生。</p>
+            <p class="text" style="border-top:#685849; border-top-width: 1px;border-top-style:solid;padding-top:20px">　以下為我在二期會訊擔任執秘時所製作的宣傳倒數圖（仿造動畫遊戲王風格），當時引起社團內不小的討論，讓許多人期待出刊！而這期魚丸會訊也是我這屆學術部至今最難忘的一期，
+                <b>點擊圖片可以放大喔！</b>
+                <figure class="flex-fig">
+                    <a href="Z1.jpg" data-toggle="lightbox">
+                        <img src="Z1.jpg" class="img-fluid fig-item">
+                    </a>
+
+                    <a href="Z2.jpg" data-toggle="lightbox">
+                        <img src="Z2.jpg" class="img-fluid fig-item">
+                    </a>
+                    <a href="Z3.jpg" data-toggle="lightbox">
+                        <img src="Z3.jpg" class="img-fluid fig-item">
+                    </a>
+                    <a href="Z4.jpg" data-toggle="lightbox">
+                        <img src="Z4.jpg" class="img-fluid fig-item">
+                    </a>
+                    <a href="Z5.jpg" data-toggle="lightbox">
+                        <img src="Z5.jpg" class="img-fluid fig-item">
+                    </a>
+                    <a href="Z6.jpg" data-toggle="lightbox">
+                        <img src="Z6.jpg" class="img-fluid fig-item">
+                    </a>
+                </figure>
+                <p class="text">　以下提供其中一篇倒數文的文案作為參考，在會內刊物工作裡添加自己的創意（雖然很鬧），得到會眾正向的回饋，無非是最大的動力來源！</p>
+                <div style="margin-left:20px;border-left:#685849; border-left-width: 1px;border-left-style:solid;padding:10px 20px 10px 20px">
+                    <p class="box">企劃、活動、開會，</p>
+                    <p class="box">擁有這世界最多會要開的南人『爆肝王』哥爾魚丸。</p>
+                    <p class="box">他交接前所留下來的話，令許多人爭相前往「偉大的會辦」探險。</p>
+                    <p class="box">「想要我的企劃嗎？想要的話我可以送給你。自己去找吧！我將我所有的企劃都藏在那裡！」</p>
+                    <p class="box">南人為了龐大的企劃，爭相前往「偉大的會辦」。可以說是一個「大爆肝時代」！</p>
+                    <p class="box">　</p>
+                    <p class="box">說這麼多整個很鬧w，二期會訊－你眼中Der南人，我要成為爆肝王（？）</p>
+                    <p class="box">二期會訊，倒數　兩　天。 </p>
+                </div>
+        </div>
+
+        <h3>
+            <span style="background-color:  #76E5BD">會卡</span>
+        </h3>
+        <div style="text-align: center">
+            <figure class="flex-fig">
+                <a href="K1.jpg" data-toggle="lightbox">
+                    <img src="K1.jpg" class="img-fluid karaoke-item">
+                </a>
+                <a href="K3.jpg" data-toggle="lightbox">
+                    <img src="K3.jpg" class="img-fluid karaoke-item">
+                </a>
+            </figure>
+            <a href="K2.jpg" data-toggle="lightbox">
+                <img src="K2.jpg" class="img-fluid kara">
+            </a>
+        </div>
+        <p class="text" style="text-align: center">
+            <b>點擊圖片同樣有放大效果喔！</b>
+        </p>
+        <p class="text">　會員卡拉OK，簡稱會卡，是我徹底愛上南友會的活動之一。對於愛唱歌的我來說，大一第一次參加後，便決定在大二一定要主辦會卡，讓更多人體驗我的感動。</p>
+        <p class="text">　在此附上的是當時慧卡籌備期間我所製作的宣傳圖，魚丸臉堪稱我們這一屆的吉祥物，所以它經常出現在我所製作的圖當中。相比許多活動多半只是貼文，我加入了更多視覺化的元素（圖、影像），宣傳排程也較頻繁，運用曝光效應讓更多人了解到我認真地籌辦會卡中！</p>
+
+        <div class="video-tablet">
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/EojR2dxGUk4" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EojR2dxGUk4" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+
+        <h3 style="border-top:#685849; border-top-width: 1px;border-top-style:solid;padding-top:20px">
+            <span style="background-color:  #76E5BD">送舊</span>
+        </h3>
+        <div style="text-align: center">
+            <a href="https://www.youtube.com/watch?v=v2L5GvShYF4&list=PLA4Q21C_QRlDaubwpPmx6WnDtNWAg-WPU" target="_blank">
+                <img src="J1.jpg" class="jojo"></img>
+            </a>
+        </div>
+        <p class="text" style="text-align: center">
+            <b>點擊圖片前往我為送舊製作的影片播放清單！</b>
+        </p>
+        <p class="text">　送舊同樣是我在參加後備受感動而決定擔任執秘的活動，記得在大二那年聽到一位學長說了句：「離家，是為了回家。」讓我至今仍難以忘懷。</p>
+        <p class="text">　南友會的成員們通常在大三、大四就不太會出現（除非擔任顧問或送舊執秘），但每個離開南友會的人對於在南友會奮鬥、燒肝的日子都仍歷歷在目。因此，送舊除了祝福學長姐畢業順利外，更擔任了重回感動的角色，讓學長姊們與老朋友們再次相聚，共同回味過去點滴，營造「回家」的溫馨氣氛。</p>
+        <p class="text">　為了讓更多學長姐們願意回家，我在送舊下了不少功夫，每天更新一部倒數影片吸引會員目光，雖然影片內容多半以開玩笑的形式呈現，但也讓學長姊深深感受到我籌辦送舊的心意。即便當時共同籌備的人數並不理想，死撐了很久也曾經想過辦完送舊就要離開南友會，但我創下了近幾年送舊參與人數最高的紀錄（甚至很多大一、大二也都有出席參加），並得到許多學長姊的肯定與感謝，那些所花費的心血讓我感到一切都值得了！</p>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+
+        <a name="two"></a>
+        <h2>學生議會</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="21"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="22"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="01.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="02.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="03.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="04.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="05.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="06.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="07.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="08.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="09.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="10.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="11.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="12.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="13.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="14.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="15.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="16.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="17.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="18.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="19.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="20.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="21.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="22.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="END.jpg">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <p class="text">　擔任學生議員期間，我除了定期參與會議並撰寫過活動考核報告書之外，也在擔任紀律委員會召集委員任期屆滿時，製作了該會期學生議員的出缺席懶人包，一方面以視覺化的方式讓校內學生對所選出的議員出缺席更加一目了然，另一方面也讓議員們確實了解自身所擔負的責任，因為代表了校內學生們，更不得有所怠惰。</p>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+
+        <a name="three"></a>
+        <h2>歌唱表演</h2>
+        <h3 style="text-align:center" 　>2017政大府城之夜《江西南Jump Sit Night》－喜劇人生／廖文強</h3>
+        <div style="margin-top:20px;margin-bottom: 40px;">
+            <div class="video-tablet">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/cb8doWo7NDA" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cb8doWo7NDA" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3 style="text-align:center">2016政大府城之夜《寂寞南Night》－Yell／いきものがかり</h3>
+        <div style="margin-top:20px;margin-bottom: 40px;">
+
+            <div class="video-tablet">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/Ryjezqmfrps" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ryjezqmfrps" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3 style="text-align:center">2016政大南友會卡《知音南尋》－多遠都要在一起／鄧紫棋</h3>
+        <div style="margin-top:20px;margin-bottom: 40px;">
+            <div class="video-tablet">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/t64Hoxo-y-s" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t64Hoxo-y-s" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <p class="text">　說到才藝表演，讀高中後就沒有跳過舞的我，僅存的大概就是愛唱歌的靈魂。平時較為內向的我，在拿到麥克風唱歌時彷彿擁有全世界，雖然歌聲無法媲美專業歌手，但句句都唱著我的情感。</p>
+        <p class="text">　唱歌作為我平時最喜歡的興趣之一，幾乎是我在壓力大時的萬靈丹，空閒時我也經常跟愛唱歌的好友們一同高歌。如果有任何煩惱，唱首歌吧！讓情緒隨著旋律飄散至空氣中，使身心得到釋放吧！</p>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+
+
+        <a name="four"></a>
+        <h2>一字千金</h2>
+        <h3 style="text-align:center">　鬥字風雲榜第9集</h3>
+        <div style="margin-top:20px;margin-bottom: 20px;">
+
+            <div class="video-tablet">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/2GgRh_lDzco" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2GgRh_lDzco" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div style="text-align: center">
+                <p class="text" style="margin-bottom: 40px;">這部影片可能有無法播放的問題，
+                    <a href="https://youtu.be/2GgRh_lDzco" target="_blank" style="text-decoration: none;color: #685849">
+                        <b>若無法播放請點擊這裡直接前往觀看。</b>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <h3 style="text-align:center">　鬥字風雲榜第10集</h3>
+        <div style="margin-top:20px;margin-bottom: 40px;">
+
+            <div class="video-tablet">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/9u06Iru9gAw" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9u06Iru9gAw" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3 style="text-align:center">　鬥字風雲榜第16集</h3>
+        <div style="margin-top:20px;margin-bottom: 40px;">
+
+            <div class="video-tablet">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/L0Gx3kF8FUY" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L0Gx3kF8FUY" frameborder="0" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <p class="text" style="text-align: center">
+            <b>版權由公視《一字千金》節目製作單位所有，請勿挪作他用。</b>
+        </p>
+        <p class="text">　起初在網路上看到《一字千金》在徵求大學生參賽者，填寫的原因只是剛好可以賺個車馬費。不過國文造詣並未多高深的我，對於國文也沒有什麼風光的過去可以說嘴。因此我寫了份以平常搞怪的廢文風格來自嘲的報名表。沒想到隔幾天就收到製作單位的錄影邀約，實在受寵若驚。</p>
+        <p class="text">　以下附上當時我所寫的報名表內容：</p>
+        <div style="margin-bottom:20px;margin-left:20px;border-left:#685849; border-left-width: 1px;border-left-style:solid;padding:10px 20px 10px 20px">
+            <p class="box" style="font-size:18px">
+                <span style="background-color: #76E5BD">曾發生過有趣的經歷：</span>
+            </p>
+            <p class="box">　因為個性比較溫和，喜歡幫助別人，某個晚上為社團學妹解惑，花了許多時間回答、討論許多她對於新聞的問題，聊完後，被說了句「學姊晚安。」_(┐「ε:)_</p>
+            <p class="box" style="font-size:18px">
+                <span style="background-color: #76E5BD">請簡述為何想參加本節目比賽並推薦自己：</span>
+            </p>
+            <p class="box">　實話來說，因為參與節目有車馬費可以圖三餐溫飽，所以就下筆填寫網路報名表。以自己擅長的搞怪文字，用心打了篇有點鬧的報名表，朋友們看到也都說上了節目要好好笑我一番。（就笑吧！雖然人生好難QQ，能帶來歡笑何嘗不可？）
+                <p class="box">　當然，上電視也是一直以來自己所好奇的（還因此瘋狂玩一字答答），能夠成就自己，又能照亮他人，如此機會怎能不好好把握呢！ 也許我不是最聰明，但我有一顆誠懇的心（也許有點古怪），選我選我！
+                </p>
+                <p class="box" style="font-size:18px;">
+                    <span style="background-color: #76E5BD">當初網路報名表的填寫內容：</span>
+                </p>
+                <p class="box">最輝煌事蹟：</p>
+                <p class="box">　去郵局臨櫃匯款，因為一直寫錯字，填了五張提款單、三張匯款單。</p>
+                <p class="box">最脫魯事蹟：</p>
+                <p class="box">　幫哥哥寫筆記，結果害他被誤會交了一個字跟人一樣可愛的女朋友。</p>
+                <p class="box">最美感事蹟：</p>
+                <p class="box">　幼稚園時拿到人生第一支麥克筆，便興奮地在家裡各處寫下自己的名字。</p>
+                <p class="box">最討厭事蹟：</p>
+                <p class="box">　每到好朋友生日、特殊節日，就很愛手寫密密麻麻的卡片送別人，造成密集恐懼症者的麻煩。</p>
+                <p class="box">希望能夠增加一個最風光事蹟：上節目在鏡頭前寫錯字｡ヽ(*´∀`)ﾉ</p>
+        </div>
+        <p class="text">　第一次錄影（第9、10集）中，我被製作單位說是一位寫字狂（事實上也是），送了一張密密麻麻的卡片給主持人，還直接被放送出來，實在好笑又尷尬。當集錄影全程可以看出我十分緊張，雖然國文並不是多好，卻也通關到了準決賽才被淘汰，打破了我對自己一開始的期望。最重要的是，該次錄影我也藉機認識其他參賽者，聆聽了不少人的生命故事，結交新朋友；此外，也確實體會到影視產業的辛勞與付出，工作人員從早錄影到晚，隨時待命的敬業精神十分令人佩服與不捨。</p>
+        <p class="text">　至於被邀請錄製第二次節目（第16集）我也是感到很驚奇，雖然不是最外向、最搶鏡頭的人，但對於工作人員的態度十分尊重，因此有工作人員提到對我十分有印象。雖然第二次錄製我很快就被淘汰了（好多魔王！），但也確實感受到第二次情緒放鬆了許多，更能放開來做自己。</p>
+        <p class="text">　節目播出後我也收到很多人對我的回饋，不論是開玩笑、肯定或是為我感到可惜，都是這些經驗裡很重要的收穫。能夠有上節目的經驗，也要謝謝工作人員選上我，也謝謝當初花了點心思搞怪的自己。</p>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
     </article>
     <footer class="bg-light">
         <div class="flex-footer ">
             <a href="https://stevenmanto.github.io/shun-works/aboutthis" target="_self" style="text-decoration: none;color:black">
                 <div class="footer-item">
-                    <img src="info.png" width="100px"></img>
+                    <img title="關於這一切" src="info.png" width="100px"></img>
                     <div style="margin-top:15px">關於這一切</div>
                 </div>
             </a>
             <a href="https://stevenmanto.github.io/shun-works/contact" target="_self" style="text-decoration: none;color:black">
                 <div class="footer-item">
-                    <img src="contact.png" width="100px"></img>
+                    <img title="聯絡我" src="contact.png" width="100px"></img>
                     <div style="margin-top:15px">聯絡我</div>
                 </div>
             </a>
             <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/shun-works/home'))));"
                 style="text-decoration: none;color:black">
                 <div class="footer-item">
-                    <img title="分享到Facebook" src="FB.png" width="100px" />
+                    <img title="分享至Facebook" src="FB.png" width="100px" />
                     <div style="margin-top:15px">FB分享</div>
                 </div>
             </a>
@@ -200,6 +797,7 @@
         </div>
 
     </footer>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -207,8 +805,17 @@
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+    $(document)
+        .on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this)
+                .ekkoLightbox();
+        });
+</script>
 
 
-<script src='http://platform.twitter.com/widgets.js' type='text/javascript' />
+
 
 </html>

@@ -1,0 +1,726 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <meta property="og:title" content="鄭順の作品集" />
+
+    <meta property="og:description" content="我是鄭順祥，畢業於政大新聞系，期望這個社會因我而有所不同。" />
+
+    <meta property="og:url" content="https://stevenmanto.github.io/shun-works/home" />
+
+    <meta property="og:image" content="https://stevenmanto.github.io/shun-works/logo.png" />
+
+    <meta property="og:type" content="website" />
+
+    <title>鄭順の作品集－新聞作品</title>
+    <!-- 瀏覽器上的 tab 的縮圖 -->
+    <link href="logo.png" rel="shortcut icon" />
+</head>
+<style>
+    .bookmark {
+        font-size: 22px;
+        font-weight: 500;
+        color: #685849;
+        text-align: center;
+        margin-top: 20px
+    }
+
+    h1 {
+        font-size: 36px;
+        font-weight: 900;
+        color: #685849;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #685849;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    article>p {
+        font-size: 22px;
+        font-weight: 500;
+        color: #685849;
+        letter-spacing: 1.15
+    }
+
+    article {
+        margin: 40px auto;
+        width: 280px;
+
+    }
+
+    .navbar {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .nav-font {
+        font-size: 20px;
+        color: #685849;
+    }
+
+    .nav-font2 {
+        font-size: 12px;
+        color: #685849;
+    }
+
+    .navbar-text {
+        color: #685849;
+    }
+
+    .img-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flex-footer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 280px;
+    }
+
+
+
+    .footer-item {
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100px;
+        color: #685849;
+
+    }
+
+    .footer-item:hover {
+        opacity: 0.5;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+    .dropdown-item:hover {
+        background-color: #e0e0e0
+    }
+
+    .card-title {
+        color: #685849;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .card-title-mobile {
+        color: #685849;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .card-text {
+        color: #685849;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1.15
+    }
+
+    .video-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #685849;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .video-text {
+        text-align: left;
+        color: #685849;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    .card-title:hover {
+        opacity: 0.5;
+    }
+
+    .card-title-mobile:hover {
+        opacity: 0.5;
+    }
+
+    .video-title:hover {
+        opacity: 0.5;
+    }
+
+    .card-img-top:hover {
+        opacity: 0.5;
+    }
+
+
+
+
+
+    @media screen and (max-width: 767px) {
+        .card-text {
+            display: none;
+        }
+        .card-title {
+            display: none;
+        }
+        .video-container {
+
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+
+
+        }
+        .video-tablet {
+            display: none
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-text {
+            display: none;
+        }
+        .video-title {
+            display: none
+        }
+        .card-title-mobile {
+            margin-top: 10px;
+            text-align: center
+        }
+
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        article {
+            width: 600px;
+        }
+        .nav-font {
+            font-size: 24px;
+        }
+        .nav-font2 {
+            font-size: 16px;
+            color: black;
+        }
+        .flex-footer {
+            max-width: 600px;
+        }
+        .navbar {
+            width: 600px;
+            margin: 0 auto;
+        }
+        .card-margin {
+            margin-top: 20px;
+        }
+        .card-text {
+            color: #685849;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .video-container {
+            display: none
+        }
+        .video-tablet {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .video-width {
+            margin: 0 auto;
+            width: 448px
+        }
+        .card-title-mobile {
+            display: none
+        }
+
+
+
+
+
+    }
+
+    @media screen and (min-width: 1025px) {
+        article {
+            width: 900px;
+        }
+        .nav-font {
+            font-size: 24px;
+        }
+        .nav-font2 {
+            font-size: 16px;
+            color: black;
+        }
+
+        .flex-footer {
+            max-width: 900px;
+        }
+        .navbar {
+            width: 900px;
+            margin: 0 auto;
+
+        }
+        .navbar-brand:hover {
+            opacity: 0.5;
+        }
+        .nav-link:hover {
+            opacity: 0.5;
+        }
+        .navbar-text {
+            width: 640px
+        }
+        .card-margin {
+            margin-top: 20px
+        }
+        .card-text {
+            color: #685849;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .card-title-mobile {
+            display: none
+        }
+        .video-tablet {
+            display: none
+        }
+        .video-container {
+            text-align: center
+        }
+        .video-width {
+            margin: 0 auto;
+            width: 560px
+        }
+
+
+    }
+</style>
+
+<body style="font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC,Apple LiGothic Medium">
+    <a name="top"></a>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light nav-font ">
+            <a class="navbar-brand nav-font" href="https://stevenmanto.github.io/shun-works/home" style=" text-align:center">
+                <img title="回首頁" src="logo.png" class="d-inline-block align-top img-icon" alt="鄭順"></img>
+            </a>
+            <span class="navbar-text">
+                鄭順の作品集
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-font2" href="https://stevenmanto.github.io/shun-works/home">回首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-font2" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            快速分類
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/home">首頁</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-cn">自傳</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-eng">Autobiography</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-jp">自叙伝</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/experience">經歷</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/news-works">新聞作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/classworks">課堂作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/otherworks">其他作品</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/aboutthis">關於這一切</a>
+                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/contact">聯絡我</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+    <article>
+
+        <h1>新聞作品</h1>
+        <p>　本區主要收錄過去我跑大學報時的純淨新聞以及專題新聞，主要分為校園、體育、影音及專題新聞各數則，每篇報導都會提供部分導言導覽（手機版則只有標題），
+            <b>若對全文有興趣敬請點擊圖片或標題前往瀏覽！</b>另有不同作品會呈現於分類中的<a href="https://stevenmanto.github.io/shun-works/classworks"  target="_blank" style="font-size: 22px;
+            font-weight: 700;color: #E55B5B;letter-spacing: 1.15;">「課堂作品」</a>與<a href="https://stevenmanto.github.io/shun-works/otherworks"  target="_blank" style="font-size: 22px;
+            font-weight: 700;color: #E55B5B;letter-spacing: 1.15;">「其他作品」</a>裡。</p>
+
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#one" role="button">校園新聞</a>
+            <a class="btn btn-light btn-lg" href="#two" role="button">體育新聞</a>
+            <a class="btn btn-light btn-lg" href="#three" role="button">影音新聞</a>
+            <a class="btn btn-light btn-lg" href="#four" role="button">專題新聞</a>
+        </div>
+
+        <a name="one"></a>
+        <h2>
+            <span >校園新聞</span>
+        </h2>
+        <div class="card-deck">
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/QBpws6" style="text-decoration: none;" />
+                <img class="card-img-top" src="A1.jpg" alt="北市大">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/QBpws6" style="text-decoration: none;">
+                        <h5 class="card-title">改新制電費未溝通　北市大生反彈</h5>
+                        <h5 class="card-title-mobile">改新制電費未溝通</h5>
+                        <h5 class="card-title-mobile">北市大生反彈</h5>
+                    </a>
+                    <p class="card-text">　台北市立大學博愛校區宿舍因被選為「2017台北世界大學運動會」國際志工宿舍，獲經費於暑假期間進行公共空間整修。工程內容包含加裝新電表並拆除舊式冷氣扣卡機...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">記者生涯第一篇新聞，上了當期頭版！</small>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/QBpws6" style="text-decoration: none;" />
+                <img class="card-img-top" src="A2.jpg" alt="105年學生會傳承研習營">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/QBpws6" style="text-decoration: none;">
+                        <h5 class="card-title">各校學代齊聚　多元交流培養獨立性</h5>
+                        <h5 class="card-title-mobile">各校學代齊聚研習營</h5>
+                        <h5 class="card-title-mobile">多元交流培養獨立性</h5>
+                    </a>
+                    <p class="card-text">　教育部青年發展署1日起於中國文化大學舉辦為期兩天的「105年大專校院學生會傳承與發展研習營」。約180名大學學生自治組織代表齊聚一同交流，學習自治精神...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">為了不要像公關稿，和採主討論了很久！</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck card-margin">
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/Q67uJ6" style="text-decoration: none;" />
+                <img class="card-img-top" src="A3.jpg" alt="政大社團老師">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/Q67uJ6" style="text-decoration: none;">
+                        <h5 class="card-title">政大生爭社團自治　未來可不聘指導師</h5>
+                        <h5 class="card-title-mobile">政大生爭社團自治</h5>
+                        <h5 class="card-title-mobile">未來可不聘指導師</h5>
+                    </a>
+                    <p class="card-text">　國立政治大學學生會21日向各社團蒐集「是否贊成社團指導老師去強制化」意見，問卷共有72個社團填答，63個社團贊成去強制化，且有高達六成社團認為指導老師沒有實質幫助。學生會後於26日...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">當時一天採訪了好多學校的學務處！</small>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/HAHQS9" style="text-decoration: none;" />
+                <img class="card-img-top" src="A4.jpg" alt="模擬法庭">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/HAHQS9" style="text-decoration: none;">
+                        <h5 class="card-title" 　>北市推陪審制　法治教育待加強</h5>
+                        <h5 class="card-title-mobile">北市推陪審制 </h5>
+                        <h5 class="card-title-mobile">法治教育待加強</h5>
+                    </a>
+                    <p class="card-text">　台灣陪審團協會與台北市政府民政局17至18日合作舉辦「全民陪審團制模擬法庭」，為全台首次民間與政府合作的模擬法庭。而模擬法庭僅是推動陪審制的一部分，若要順利推行更須加強公民法治教育。</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">寫這篇時請教了好多法律專家，很燒頭腦，但對法律有更多認識！</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+
+        <a name="two"></a>
+        <h2>
+            <span >體育新聞</span>
+        </h2>
+        <div class="card-deck card-margin">
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/DD4Hhr" style="text-decoration: none;" />
+                <img class="card-img-top" src="B1.jpg" alt="輪椅桌球">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/DD4Hhr" style="text-decoration: none;">
+                        <h5 class="card-title">輪椅乒乓賽　不分身障體驗「坐」戰</h5>
+                        <h5 class="card-title-mobile">輪椅乒乓賽</h5>
+                        <h5 class="card-title-mobile">不分身障體驗「坐」戰</h5>
+                    </a>
+                    <p class="card-text">　「第十屆傑人盃全國桌球人士輪椅賽」2日於靜宜大學展開對決。除了一般身障選手外，也邀請過去球王、球后與「帕拉林匹克運動會」（簡稱帕運）國手加入比賽，更有靜宜和國立台灣體育運動大學...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">原先被退線，但身障體育也有報導的價值存在！</small>
+                </div>
+
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/iQhyuo" style="text-decoration: none;" />
+                <img class="card-img-top" src="B2.jpg" alt="桌球總統盃">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/iQhyuo" style="text-decoration: none;">
+                        <h5 class="card-title">對決桌球國手　賴俊穎雖敗猶榮</h5>
+                        <h5 class="card-title-mobile">對決桌球國手</h5>
+                        <h5 class="card-title-mobile">賴俊穎雖敗猶榮</h5>
+                    </a>
+                    <p class="card-text">　「105年全國總統盃社會組桌球錦標賽」21至23日於臺北市立松山高級商業家事職業學校（松山家商）正式開打。男子組八強賽中，國立台灣體育運動大學對決國手雲集的合庫銀行隊，首戰出場的...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">著重在大學生選手與國手的較勁經驗談！</small>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck card-margin">
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/lys7yu" style="text-decoration: none;" />
+                <img class="card-img-top" src="B3.jpg" alt="柔道">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/lys7yu" style="text-decoration: none;">
+                        <h5 class="card-title">柔道高手齊對招　陳楓舜享受過程</h5>
+                        <h5 class="card-title-mobile">柔道高手齊對招</h5>
+                        <h5 class="card-title-mobile">陳楓舜享受過程</h5>
+                    </a>
+                    <p class="card-text">　「105年全國中正盃柔道錦標賽」15至19日舉行。去年獲得第二名、國立台東大學陳楓舜今年捲土重來，仍無法成功奪冠、再度以亞軍坐收。</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">與選手聊天會發現可寫的題材不只冠軍！</small>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/un4ZdN" style="text-decoration: none;" />
+                <img class="card-img-top" src="B4.jpg" alt="槌球">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/un4ZdN" style="text-decoration: none;">
+                        <h5 class="card-title" 　>槌球人才斷層　盼大學新血加入</h5>
+                        <h5 class="card-title-mobile">槌球人才斷層 </h5>
+                        <h5 class="card-title-mobile">盼大學新血加入</h5>
+                    </a>
+                    <p class="card-text">　「2016年高雄國際槌球錦標賽」18至20日盛大舉辦，選手多為中老年人，僅香港隊伍有大專生參賽者。槌球盛行於香港年輕人間，但在台灣卻成M型化發展...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">發現槌球一直沒有國內大專選手，而發想出這則報導！</small>
+                </div>
+            </div>
+        </div>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+        <a name="three"></a>
+        <h2>
+            <span >影音新聞</span>
+        </h2>
+        <div class="video-tablet">
+            <iframe width="448" height="252" src="https://www.youtube.com/embed/lGc0Fw8bU-0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lGc0Fw8bU-0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        <a target="_blank" href="https://goo.gl/HUdbno" style="text-decoration:none;">
+            <h5 class="video-title">馬術治療助復健　身障選手盼獲政府重視</h5>
+            <h5 class="card-title-mobile">馬術治療助復健 </h5>
+            <h5 class="card-title-mobile">身障選手盼獲政府重視</h5>
+        </a>
+        <p class="video-text video-width" style="margin-bottom: 40px;">【記者江殷年、鄭順祥桃園報導】　激昂的交響樂響起，騎士拉緊韁繩，帶領馬兒踩在每個節拍上。第十二屆希望盃身障馬術賽8日於桃園市中壢區台灣馬術治療中心正式展開，這次以「Hand in Hand」為主題，期待打破隔閡，讓身障與一般選手在賽場上共同較勁。</p>
+        <div class="video-tablet">
+            <iframe width="448px" height="252" src="https://www.youtube.com/embed/hhVzQt5hh4w" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560px" height="315" src="https://www.youtube.com/embed/hhVzQt5hh4w" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        </div>
+        <a target="_blank" href="https://goo.gl/RJfy3x" style="text-decoration:none;">
+            <h5 class="video-title">機車族上街爭路權　要求政府交通解嚴</h5>
+            <h5 class="card-title-mobile">機車族上街爭路權 </h5>
+            <h5 class="card-title-mobile">要求政府交通解嚴</h5>
+        </a>
+        <p class="video-text video-width" style="margin-bottom: 40px;">【記者鄭順祥、江殷年台北報導】　身穿黃色背心，眾多車友頭戴安全帽、高舉標語，為機車族爭取平等路權。11月26日台灣機車權益促進會於交通部外發起「解除交通戒嚴」抗議活動，要求政府不應強制兩段式左轉並廢除禁行機車道，現場聚集了上百位車友共同響應。</p>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+
+        <a name="four"></a>
+        <h2>
+            <span >專題新聞</span>
+        </h2>
+        <div class="card-deck card-margin web">
+            <div class="card">
+                <a target="_blank" href="http://www.cs.nccu.edu.tw/~g10539/WorriesofDyeingHair/index.html" style="text-decoration: none;"
+                />
+                <img class="card-img-top" src="D1.jpg" alt="染髮">
+                <div class="card-body">
+                    <a target="_blank" href="http://www.cs.nccu.edu.tw/~g10539/WorriesofDyeingHair/index.html" style="text-decoration: none;">
+                        <h5 class="card-title">染髮的隱憂－亮麗外表的潛在風險</h5>
+                        <h5 class="card-title-mobile">染髮的隱憂</h5>
+                        <h5 class="card-title-mobile">亮麗外表的潛在風險</h5>
+                    </a>
+                    <p class="card-text">　走在校園中可以發現染髮的學生不在少數，從常見的棕色、深紅色，到較少人選擇的金色、粉紅色都有。而染髮的原因有很多，包括為了擁有更亮麗的外貌、工作需求、偶像崇拜等。根據大學報收集的530份問卷結果顯示，在學生族群中，有將近95％的人是「為了美觀」選擇染髮。此外，大約半年染一次的人就佔了36％。究竟為了美觀的背後，需要做出哪些犧牲呢？</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">本專題與資科所學長姊合作，包含許多互動圖表，更重視資訊視覺化！</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-deck card-margin web">
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/JDhMTz" style="text-decoration: none;" />
+                <img class="card-img-top" src="D2.jpg" alt="劇組">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/JDhMTz" style="text-decoration: none;">
+                        <h5 class="card-title">夢想燒盡之後　被忽略的影視勞動</h5>
+                        <h5 class="card-title-mobile">夢想燒盡之後</h5>
+                        <h5 class="card-title-mobile">被忽略的影視勞動</h5>
+                    </a>
+                    <p class="card-text">　打開電視，節目播送的是重播數次的《甄環傳》、《瑯琊榜》，想看最新的韓劇就上愛奇藝或楓林網，即使進電影院，台灣觀眾選擇的不外乎是好萊塢大片，台灣的影視產業出了什麼問題？...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">《大銀幕背後－影視產業的現實與挑戰》系列專題之一，獲2018年《中正新傳獎》最佳專題新聞獎。</small>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/3EA15j" style="text-decoration: none;" />
+                <img class="card-img-top" src="D3.png" alt="影視輔導金">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/3EA15j" style="text-decoration: none;">
+                        <h5 class="card-title">拍片入場券　輔導金的現實面</h5>
+                        <h5 class="card-title-mobile">拍片入場券</h5>
+                        <h5 class="card-title-mobile">輔導金的現實面</h5>
+                    </a>
+                    <p class="card-text">　繼今年1月《52赫茲我愛你》賣出四千萬票房後，3月上映的《目擊者》也在十天內突破兩千萬票房，數字亮麗之外，也是國內近年少見的音樂劇和類型片，這兩部片在去年分別獲得電影輔導...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">《大銀幕背後－影視產業的現實與挑戰》系列專題之二，獲2018年《中正新傳獎》最佳專題新聞獎。</small>
+                </div>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/NcpR63" style="text-decoration: none;" />
+                <img class="card-img-top" src="D4.jpg" alt="影視科系">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/NcpR63" style="text-decoration: none;">
+                        <h5 class="card-title">數位時代求生存　影視科系的專業與焦慮</h5>
+                        <h5 class="card-title-mobile">數位時代求生存</h5>
+                        <h5 class="card-title-mobile">影視科系的專業與焦慮</h5>
+                    </a>
+                    <p class="card-text">　「系上學到的東西很少，80%是自己發展興趣。」現就讀國立政治大學廣播電視學系學生顏子為，曾獲「台南39小時拍片競賽」最佳剪接獎，他的作品《十全十美》更入圍第十屆Myfone行動...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">《大銀幕背後－影視產業的現實與挑戰》系列專題之三，獲2018年《中正新傳獎》最佳專題新聞獎。</small>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card-deck card-margin">
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/K6TT6C" style="text-decoration: none;" />
+                <img class="card-img-top" src="D5.jpg" alt="國旅卡">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/K6TT6C" style="text-decoration: none;">
+                        <h5 class="card-title">國旅卡新制救陸客缺口？　學者籲觀光多元發展</h5>
+                        <h5 class="card-title-mobile">國旅卡新制救陸客缺口？</h5>
+                        <h5 class="card-title-mobile">學者籲觀光多元發展</h5>
+                    </a>
+                    <p class="card-text">　行政院為降低陸客減少對台灣觀光業造成的衝擊，於民國105年12月通過「3.0版國民旅遊卡新制」，限制每人至少半數補助額（新台幣8000元）須用於觀光旅遊業。然而，此舉不但引起部分公務員...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">這是我們的第一篇專題，歷經非常多次的討論！</small>
+                </div>
+
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://goo.gl/fokzYR" style="text-decoration: none;" />
+                <img class="card-img-top" src="D6.jpg" alt="">
+                <div class="card-body">
+                    <a target="_blank" href="https://goo.gl/fokzYR" style="text-decoration: none;">
+                        <h5 class="card-title" 　>揮別土法煉鋼　運動科學化訓練事半功倍</h5>
+                        <h5 class="card-title-mobile">揮別土法煉鋼 </h5>
+                        <h5 class="card-title-mobile">運動科學化訓練事半功倍</h5>
+                    </a>
+                    <p class="card-text">　「我是丁聖祐，我要科學化訓練！」臉書粉絲專頁「Fair Game！TAIWAN！體育改革聯會」4月11日轉貼一段由游泳國手–丁聖祐拍攝的影片。目前就讀國立台灣大學的她，有台大泳后的美名...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">科學化訓練對於體育選手而言是不容忽視的重要發展！</small>
+                </div>
+            </div>
+        </div>
+        <div class="bookmark">
+            <a class="btn btn-light btn-lg" href="#top" role="button">回到頂端</a>
+        </div>
+
+        <!--加上文字底色-->
+
+
+    </article>
+    <footer class="bg-light">
+        <div class="flex-footer ">
+            <a href="https://stevenmanto.github.io/shun-works/aboutthis" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img title="關於這一切" src="info.png" width="100px"></img>
+                    <div style="margin-top:15px">關於這一切</div>
+                </div>
+            </a>
+            <a href="https://stevenmanto.github.io/shun-works/contact" target="_self" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img title="聯絡我" src="contact.png" width="100px"></img>
+                    <div style="margin-top:15px">聯絡我</div>
+                </div>
+            </a>
+            <a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent('https://stevenmanto.github.io/shun-works/home'))));"
+                style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img title="分享至Facebook" src="FB.png" width="100px" />
+                    <div style="margin-top:15px">FB分享</div>
+                </div>
+            </a>
+            <a target="_blank" href="http://twitter.com/home/?status=鄭順の作品集：https://stevenmanto.github.io/shun-works/home" style="text-decoration: none;color:black">
+                <div class="footer-item">
+                    <img title="分享至twitter" src="Twitter.png" width="100px" />
+                    <div style="margin-top:15px">Twitter分享</div>
+
+                </div>
+            </a>
+
+        </div>
+
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+<script src='http://platform.twitter.com/widgets.js' type='text/javascript' />
+
+
+
+
+
+</html>
