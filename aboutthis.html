@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA="
+        crossorigin="anonymous" />
     <meta property="og:title" content="鄭順の作品集" />
 
     <meta property="og:description" content="我是鄭順祥，畢業於政大新聞系，期望這個社會因我而有所不同。" />
@@ -19,7 +21,6 @@
     <link href="logo.png" rel="shortcut icon" />
 </head>
 <style>
-  
     .bookmark {
         font-size: 22px;
         font-weight: 500;
@@ -40,16 +41,17 @@
         color: #685849;
         margin-top: 20px;
         margin-bottom: 20px;
-
+        background-color: #76E5BD;
     }
 
-    .leading{
+    .leading {
         font-size: 22px;
         font-weight: 500;
         color: #685849;
         letter-spacing: 1.15
     }
-    .text{
+
+    .text {
         font-size: 18px;
         font-weight: 500;
         color: #685849;
@@ -121,11 +123,29 @@
         background-color: #e0e0e0
     }
 
+    .flex-fig {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 280px;
+    }
 
-
+    .img-item {
+        width: 120px;
+        height: 170px;
+        margin-bottom: 20px
+    }
+  
+    .code{
+        border-radius: 20px
+    }
 
     @media screen and (max-width: 767px) {
-       
+        .code{
+        width:100%
+    }
 
     }
 
@@ -147,8 +167,12 @@
             width: 600px;
             margin: 0 auto;
         }
-     
-
+        .flex-fig {
+            max-width: 600px;
+        }
+        .code{
+        width:80%
+    }
 
 
 
@@ -184,7 +208,16 @@
         .navbar-text {
             width: 640px
         }
-       
+        .flex-fig {
+            max-width: 900px;
+        }
+        .img-item {
+            width: 200px;
+            height: 283px;
+        }
+        .code{
+        width:60%
+    }
 
     }
 </style>
@@ -220,7 +253,6 @@
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/home">首頁</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-cn">自傳</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-eng">Autobiography</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-jp">自叙伝</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/experience">經歷</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/news-works">新聞作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/classworks">課堂作品</a>
@@ -236,7 +268,29 @@
 
     </header>
     <article>
-
+        <h1>關於這一切</h1>
+        <h2>起源</h2>
+        <p class="text">　在看見人力銀行的履歷格式後，我認為，似乎還有更不一樣的方式可以呈現自己。因此，我運用自己在大四課程所學的基礎html程式碼整理了自己的作品集，進而呈現出這個網站。</p>
+        <p class="text">　另一方面，也是因為等兵單期間，我只能待在家裡、打零工，實在是讓人懷疑人生。所以寫寫網站讓自己處於持續動腦的狀態，也讓自己在當兵前就做好履歷，以備在退伍後能開始找工作。而在您看到這個網站的同時，我已經退伍了（萬歲）。</p>
+        <p class="text">　雖然我只是個程式初學者，但我仍然盡自己所能地一步步架構起這個網站。裡頭的一字一句，以及排版設計皆未假他人之手，也是讓看見這個網站的您，確實理解我的實力程度在哪，毫無遮掩。</p>
+        <h2>製作過程</h2>
+       
+        <figure class="flex-fig">
+            <img src="W1.jpg" class="img-item" style="border-radius: 20px"></img>
+            <img src="W2.jpg" class="img-item" style="border-radius: 20px"></img>
+            <img src="W3.jpg" class="img-item" style="border-radius: 20px"></img>
+        </figure>
+        <p class="text">　首先，我先將網頁的構想畫在紙上，並設計一些網站上需要用到的logo、icon等元素，接著透過adobe illustrator將設計好的圖像以電腦繪圖輸出。</p>
+        <p class="text">　正常來說，網站架構也需要製作成電腦繪圖並置入zeplin等軟體，進而讀取程式碼置入寫程式的軟體中。然而，因為程式相容性的問題，我無法匯入zeplin讀取程式碼，只能靠多次測試來記錄排版規格。</p>
+        <p class="text">　程式碼編譯我則是使用visual studio code來處理，製作完畢後再將所有網頁上傳至github並將網站上架。另外，我的網站也有放入google analytics和hotjar進行後臺管理。</p>
+        <figure style="text-align: center">
+            <img src="code.png" class="code" />
+        </figure>
+        <h2>後記</h2>
+        <p class="text">　特別感謝為政大新聞系開設「新聞網站平台運作實務」課程的報導者工程師李法賢老師，開啟了我對程式的理解之路。雖然還有很多需要精進的地方，但踏出一步後會發現程式真的比想像中有趣得多！</p>
+        <p class="text">　也特別感謝陪伴我大學四年系上、南友會、都可以、五要吃肉肉、雜編組、大學報的老師、朋友、伙伴及高中舊識們，沒有你們，我也不會有這些作品能夠呈現。不論未來大家朝什麼領域邁進，希望你們都別忘記我們曾一起努力燒肝，努力發牢騷，努力為彼此的理想奮鬥。</p>
+        <p class="text">　當然，家人也是我最要感謝的人們之一，有了你們的支持，我才能夠勇敢向前，Love you all！</p>
+        <p class="text">　最後，也謝謝自己。謝謝你挺過了許多難關，謝謝你不只能正向積極，也能宣洩所有負面情緒。希望你的未來能夠充滿精彩，向過去的我們說聲：「我過得很好，別擔心。」</p>
     </article>
     <footer class="bg-light">
         <div class="flex-footer ">
@@ -270,16 +324,24 @@
         </div>
 
     </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-
 <script src='http://platform.twitter.com/widgets.js' type='text/javascript' />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script>
+    $(document)
+        .on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this)
+                .ekkoLightbox();
+        });
+</script>
+</body>
+
 
 
 

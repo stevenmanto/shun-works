@@ -19,7 +19,6 @@
     <link href="logo.png" rel="shortcut icon" />
 </head>
 <style>
-  
     .bookmark {
         font-size: 22px;
         font-weight: 500;
@@ -32,25 +31,28 @@
         font-size: 36px;
         font-weight: 900;
         color: #685849;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     h2 {
         font-size: 28px;
         font-weight: 700;
         color: #685849;
-        margin-top: 20px;
+        margin-top: 40px;
         margin-bottom: 20px;
 
     }
 
-   .leading{
+    .leading {
         font-size: 22px;
         font-weight: 500;
         color: #685849;
         letter-spacing: 1.15
     }
-    .text{
-        font-size: 18px;
+
+    .text {
+        font-size: 14px;
         font-weight: 500;
         color: #685849;
         letter-spacing: 1.15
@@ -121,12 +123,38 @@
         background-color: #e0e0e0
     }
 
+    .flex-contact {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 280px;
+    }
+
+    .contact-item {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 100px;
+
+    }
+
+    .contact-item:hover {
+        opacity: 0.5;
+    }
 
 
 
     @media screen and (max-width: 767px) {
-       
+        .text {
+            font-size: 12px
+        }
+        .contact-item {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100px;
 
+        }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -147,13 +175,32 @@
             width: 600px;
             margin: 0 auto;
         }
-     
 
+        .flex-contact {
+            max-width: 600px;
+        }
+        .contact-item {
 
+            width: 200px;
 
+        }
+        .text {
+            font-size: 12px
+        }
+        .contact-item {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            
 
-
+        }
     }
+
+
+
+
+
+
+
 
     @media screen and (min-width: 1025px) {
         article {
@@ -184,7 +231,16 @@
         .navbar-text {
             width: 640px
         }
-       
+        .flex-contact {
+            max-width: 900px;
+        }
+        .contact-item {
+
+            width: 300px;
+
+        }
+
+
 
     }
 </style>
@@ -220,7 +276,6 @@
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/home">首頁</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-cn">自傳</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-eng">Autobiography</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-jp">自叙伝</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/experience">經歷</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/news-works">新聞作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/classworks">課堂作品</a>
@@ -236,7 +291,55 @@
 
     </header>
     <article>
-
+        <h1>聯絡我</h1>
+        <p class="leading" style="margin: auto">點擊各icon就可以連結到相應的聯絡方式，您也可以複製底下的網址進一步聯絡我喔！</p>
+        <div class="flex-contact">
+            <a href="https://www.facebook.com/profile.php?id=100000494070697" target="_blank" style="text-decoration: none;">
+                <div class="contact-item">
+                    <img title="Facebook" src="facebook.png" width="100px"></img>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/steven_manto/" target="_blank" style="text-decoration: none;">
+                <div class="contact-item">
+                    <img title="Instagram" src="instagram.png" width="100px"></img>
+                </div>
+            </a>
+            <a href="https://line.me/ti/p/0Qf0kyTk8S" target="_blank" style="text-decoration: none;">
+                <div class="contact-item">
+                    <img title="Line" src="line.png" width="100px"></img>
+                </div>
+            </a>
+            <a href="https://twitter.com/steven_manto" target="_blank" style="text-decoration: none;">
+                <div class="contact-item">
+                    <img title="Twitter" src="twit.png" width="100px"></img>
+                </div>
+            </a>
+            <a href="https://medium.com/@tnfsh11340forever" target="_blank" style="text-decoration: none;">
+                <div class="contact-item">
+                    <img title="Medium" src="medium.png" width="100px"></img>
+                </div>
+            </a>
+            <a href="mailto:tnfsh11340forever@gmail.com ?subject=【鄭順の作品集聯絡事項】" target="_blank">
+                <div class="contact-item">
+                    <img title="gmail" src="gmail.png" width="100px" />
+                </div>
+            </a>
+        </div>
+        <div>
+            <h2>網址</h2>
+            <p class="text">
+                <b>Facebook：</b>https://www.facebook.com/profile.php?id=100000494070697（鄭順祥）</p>
+            <p class="text">
+                <b>Instagram：</b>https://www.instagram.com/steven_manto/</p>
+            <p class="text">
+                <b>Line：</b>https://line.me/ti/p/0Qf0kyTk8S</p>
+            <p class="text">
+                <b>Twitter：</b>https://twitter.com/steven_manto</p>
+            <p class="text">
+                <b>Medium：</b>https://medium.com/@tnfsh11340forever</p>
+            <p class="text">
+                <b>E-mail：</b>tnfsh11340forever@gmail.com、103405039@mail2.nccu.tw</p>
+        </div>
     </article>
     <footer class="bg-light">
         <div class="flex-footer ">

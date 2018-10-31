@@ -24,7 +24,7 @@
         font-weight: 500;
         color: #685849;
         text-align: center;
-        margin-top: 20px
+        margin-top: 40px
     }
 
     h1 {
@@ -121,10 +121,65 @@
         background-color: #e0e0e0
     }
 
+    .card-text {
+        color: #685849;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 1.15
+    }
+
+    .card-title {
+        color: #685849;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .related-img {
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .related-box {
+        width: 100%;
+        margin: 20px auto;
+        background-color: #F4E6BE;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .media-body {
+        padding: 20px
+    }
+
+    .card-margin {
+        margin-bottom: 5px;
+
+    }
 
 
 
-    @media screen and (max-width: 767px) {}
+
+    @media screen and (max-width: 767px) {
+        .card-title {
+            font-size: 14px;
+        }
+        .card-text {
+            font-size: 18px;
+        }
+        .related-box {
+            display: none
+        }
+        .card-deck {
+            margin-top: 20px
+        }
+        .pd {
+            margin-left: 45px
+        }
+        .ld {
+            width: 250px;
+            margin: 20px auto;
+        }
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         article {
@@ -144,13 +199,40 @@
             width: 600px;
             margin: 0 auto;
         }
-
-
-
-
-
+        .card-title {
+            font-size: 14px;
+        }
+        .card-text {
+            font-size: 18px;
+        }
+        .media-body {
+            padding: 0
+        }
+        .card-deck {
+            display: none
+        }
+        .pd {
+            padding-left: 46px
+        }
+        .ld {
+            width: 500px;
+            margin: 20px auto;
+        }
+        .card-text-email {
+            color: #685849;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1.15
+        }
 
     }
+
+
+
+
+
+
+
 
     @media screen and (min-width: 1025px) {
         article {
@@ -181,7 +263,22 @@
         .navbar-text {
             width: 640px
         }
-
+        .card-deck {
+            display: none
+        }
+        .pd {
+            padding-left: 58px
+        }
+        .ld {
+            width: 600px;
+            margin: 20px auto;
+        }
+        .card-text-email {
+            color: #685849;
+            font-size: 19px;
+            font-weight: 500;
+            letter-spacing: 1.15
+        }
 
     }
 </style>
@@ -217,7 +314,6 @@
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/home">首頁</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-cn">自傳</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-eng">Autobiography</a>
-                            <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/autobiography-jp">自叙伝</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/experience">經歷</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/news-works">新聞作品</a>
                             <a class="dropdown-item" href="https://stevenmanto.github.io/shun-works/classworks">課堂作品</a>
@@ -233,7 +329,187 @@
 
     </header>
     <article>
+        <h1>個人簡歷</h1>
+        <div class="media related-box" style="border-radius: 20px">
+            <img class="align-self-top mr-3 related-img" style="border-radius: 20px" src="Me.jpg" alt="鄭順祥"></img>
+            <div class="media-body">
+                <div class="card-margin">
+                    <span class="card-title">姓名：</span>
+                    <span class="card-text">鄭順祥</span>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">生日：</span>
+                    <span class="card-text">1996.01.21</span>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">學歷：</span>
+                    <span class="card-text">國立政治大學新聞學系</span>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">日文學系輔系</p>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">專長：</span>
+                    <span class="card-text">文書處理、新聞撰寫、</span>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">圖像製作、影音剪輯、攝影、排版編輯</p>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">語言：</span>
+                    <span class="card-text">中文、台語、英文、日文</span>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">軟體：</span>
+                    <span class="card-text">Microsoft Office、</span>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">Powerpoint、Excel</p>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">Photoshop、Lightroom、Indesign、Illustrator、Audition、Edius</p>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">簡歷：</span>
+                    <span class="card-text">政大大學報採訪編輯</span>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">政大大學報學顧</p>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">政大南友會會長</p>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">政大傳播學院學生議員</p>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">政大教發中心學生記者</p>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">駕照：</span>
+                    <span class="card-text">普通重型機車、自排車</span>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">嗜好：</span>
+                    <span class="card-text">歌唱、插畫、電影、音樂</span>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text">慢跑、游泳、單車、羽球</p>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">Line：</span>
+                    <span class="card-text">stevenmanto</span>
+                </div>
+                <div class="card-margin">
+                    <span class="card-title">信箱：</span>
+                    <span class="card-text-email">tnfsh11340forever@gmail.com</span>
+                </div>
+                <div class="pd card-margin">
+                    <p class="card-text-email">103405039@mail2.nccu.tw</p>
+                </div>
 
+            </div>
+        </div>
+
+        <div class="card-deck card-margin">
+            <div class="card">
+                <img class="card-img-top" src="Me.jpg" alt="鄭順祥">
+                <div class="card-body">
+                    <div class="card-margin">
+                        <span class="card-title">姓名：</span>
+                        <span class="card-text">鄭順祥</span>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">生日：</span>
+                        <span class="card-text">1996.01.21</span>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">學歷：</span>
+                        <span class="card-text">國立政治大學新聞學系</span>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">日文學系輔系</p>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">專長：</span>
+                        <span class="card-text">文書處理、新聞撰寫、</span>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">圖像製作、影音剪輯、攝影、排版編輯</p>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">語言：</span>
+                        <span class="card-text">中文、台語、</span>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">英文、日文</p>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">軟體：</span>
+                        <span class="card-text">Microsoft Office、</span>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">Powerpoint、Excel</p>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">Photoshop、Lightroom、Indesign、Illustrator、Audition、Edius</p>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">簡歷：</span>
+                        <span class="card-text">政大大學報採訪編輯</span>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">政大大學報學顧</p>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">政大南友會會長</p>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">政大傳播學院學生議員</p>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">政大教發中心學生記者</p>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">駕照：</span>
+                        <span class="card-text">普通重型機車、自排車</span>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">嗜好：</span>
+                        <span class="card-text">歌唱、插畫、電影、</span>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">音樂、慢跑、游泳、</p>
+                    </div>
+                    <div class="pd card-margin">
+                        <p class="card-text">單車、羽球</p>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">Line：</span>
+                        <span class="card-text">stevenmanto</span>
+                    </div>
+                    <div class="card-margin">
+                        <span class="card-title">E-mail：</span>
+                        <span class="card-text" style="font-size: 14px">tnfsh11340forever@gmail.com</span>
+                    </div>
+                    <div class=" card-margin">
+                        <p class="card-text" style="font-size: 14px">103405039@mail2.nccu.tw</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ld">
+            <p class="leading">　您好，我是鄭順祥。非常感謝您點入我的作品集網站，裡頭包含了我大學期間所經歷的大小事務，從嚴肅正經到幽默逗趣都一覽無遺。您可以點擊底下的導覽區前往各分類詳閱，也可以點擊右上角的快速分類。</p>
+            <p class="leading">　若您想進一步連絡我，歡迎點擊網頁底部或快速分類中的聯絡我取得我的聯絡資料，您也可以利用原先人力網站的功能與我取得聯繫，期待您的來訊！</p>
+        </div>
+        <div class="bookmark">
+            <a class="btn btn-info btn-lg" href="https://stevenmanto.github.io/shun-works/autobiography-cn" role="button">中文自傳</a>
+            <a class="btn btn-info btn-lg" href="https://stevenmanto.github.io/shun-works/autobiography-eng" role="button">英文自傳</a>
+            <a class="btn btn-info btn-lg" href="#https://stevenmanto.github.io/shun-works/experience" role="button">求學經歷</a>
+            <a class="btn btn-info btn-lg" href="#https://stevenmanto.github.io/shun-works/news-works" role="button">新聞作品</a>
+            <a class="btn btn-info btn-lg" href="#https://stevenmanto.github.io/shun-works/otherworks" role="button">其他作品</a>
+        </div>
     </article>
     <footer class="bg-light">
         <div class="flex-footer ">
